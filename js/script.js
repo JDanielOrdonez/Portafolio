@@ -6,4 +6,3 @@ var options = {
     loop: true
   };
   
-  var typed = new Typed('.typed', options);
