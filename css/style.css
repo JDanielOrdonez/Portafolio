@@ -1,0 +1,517 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	color: #1F2937;
+}
+/* NAV BAR */
+nav{	
+	width: 100%;	
+	height: 5rem;
+	box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'consolas', 'Open Sans', 'Arial' !important;
+}
+nav ul{
+	display: flex;
+	margin-right: 1rem;
+	
+}
+nav h1{
+	margin-left: 10%;
+}
+
+nav ul li{
+	margin: 1rem;
+	font-size: 1em;
+}
+a{
+	color: #1F2937;
+}
+
+nav .checkbtn{
+	font-size: 1.5rem;	
+	margin: 1rem;
+	cursor: pointer;
+	display: none;
+}
+nav .checkbtn i{
+	color: #8D929D;
+}
+#check{
+	display: none;
+}
+
+/* MAIN PRESENTACIÓN*/
+
+main{
+	height: 100vh;
+}
+
+main .redes-sociales{	
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	justify-content: center;
+	position: fixed;
+	width: 10%;
+	height: 80vh;
+	margin-top: 2em;
+}
+main .redes-sociales .icon{	
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 2rem;
+	width: 5rem;
+	height: 20rem;
+}
+main .redes-sociales .icon .fa-linkedin{
+	color: #0073B1;
+}
+main .redes-sociales .icon .fa-square-whatsapp{
+	color: #03C100;
+}
+main .redes-sociales .icon .fa-facebook{
+	color: #046FDF;
+}
+
+main .redes-sociales .linea{
+	background-color: black;
+	width: 2px;
+	height: 40vh;
+}
+
+main .presentacion{
+	display: flex;
+	justify-content: start;	
+	flex-direction: column;
+	width: 90%;
+	margin-left: 10%;
+	margin-bottom: 9rem;
+}
+
+main .presentacion .container{
+	display: flex;
+	font-family: 'Segoe UI','Open Sans', 'Arial';
+	margin-top: 4em;
+	width: 80%;
+	height: 80%;
+	flex-direction: column;
+}
+
+main .presentacion .intro, 
+					.num{
+	font-family: 'consolas', 'Open Sans', 'Arial';
+	color: #5CA5EA;
+	font-size: 1.1em;	
+	font-weight: bold;
+}
+main .presentacion .name{	
+	color: #31C48D;
+	font-size: 3rem;
+}
+
+main .presentacion .typed, .typed-cursor{
+	font-size: 3rem;
+	font-weight: bold;
+}
+main .presentacion .typed-cursor{
+	font-size: 3rem;
+}
+
+main .presentacion .auto{
+	width: 100%;
+	height: 100px;
+}
+main .presentacion .descripcion, .infoDescripcion{
+	font-family: 'Segoe UI','Open Sans', 'Arial';
+	line-height: 1.8rem;
+	margin-top: 3em;
+	width: 90%;
+}
+
+main button{
+	margin-top: 3em;
+	color:#ffffff;
+	font-weight:bold;
+	width: 8em;
+	padding:6px 12px;
+	font-size:1rem;
+	text-align:center;
+	cursor:pointer;
+	background-color: #147BE8;
+	border:2px solid transparent;
+	border-radius:15px;
+}
+main button:hover{
+	transition: ease-in-out .6s;
+	box-shadow: 0 0 35px rgba(72, 50, 201, 0.8);
+}
+
+/* MAIN INFO */
+main .info, 
+	.educacion, 
+	.habilidades,
+	.proyectos{
+	margin-bottom: 8rem;
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+main .info{
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+main .info .subtitulo, 
+			.educacion .subtitulo, 
+			.habilidades .subtitulo,
+			.proyectos .subtitulo{
+	display: flex;
+	align-items: center;
+}
+
+main .info .subtitulo h3, 
+			.educacion .subtitulo h3, 
+			.habilidades .subtitulo h3,
+			.proyectos .subtitulo h3{
+	font-family: 'Segoe UI','Open Sans', 'Arial';
+	font-size: 2rem;
+}
+main .info .subtitulo .linea, 
+						.educacion .subtitulo .linea, 
+						.habilidades .subtitulo .linea,
+						.proyectos .subtitulo .linea{	
+	margin-left: 2rem;
+	width: 20vh;
+	height: 3px;
+	background-color: lightskyblue;
+}
+
+main .info .card{
+	display: flex;
+	align-items: center;	
+}
+main .info .avatar{
+	width: 10rem;
+	height: 10rem;
+}
+main .info .avatar .img{
+	background-image: url('../img/avatar.jpg');
+	background-position: 0 10%;
+	background-size: cover;
+	border-radius: 50%;
+	border-width: 5px;
+	height: 10rem;
+	overflow: hidden;
+	width: 10rem;	
+}
+
+
+/* EDUCACION */
+main .educacion{
+	align-items:flex-start;
+	flex-direction: column;
+}
+
+main .educacion .lineaTiempo{	
+	display: flex;
+	flex-direction: column;
+	font-family: 'Segoe UI','Open Sans', 'Arial';
+	width: 100%;	
+	flex-wrap: wrap;
+	position: relative;
+	margin: auto;
+}
+main .educacion .lineaT{
+	position: absolute;
+	left: 50%;
+	height: 100%;
+	width: 3px;
+	background-color: #2f363e;
+}
+main .educacion .lineaTiempo .rowCard{	
+	display: flex;
+	justify-content: start;
+	width: 100%;
+	padding: 0 15px;
+	align-items: center;
+}
+main .educacion .lineaTiempo .cardLinea{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 45%;
+	margin-top: 10px;		
+	padding: 10px;
+}
+main .educacion .lineaTiempo .right{
+	justify-content: end;	
+}
+main .educacion .lineaTiempo .rowCard .rightT{
+	align-items: flex-start;
+}
+main .educacion .lineaTiempo .cardLinea .descripcion{
+	border-left: 5px solid #31c48d ;
+	background-color: #E0F2FE; 
+	padding: 20px;
+}
+
+main .rowCard .circle{
+	margin-top: 8px;
+	background-color: #31c48d;
+	border-radius: 50%;
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	left: calc(50% - 6px);
+}
+main .educacion .lineaTiempo .cardLinea .fecha{
+	color: #31C48D;
+	margin: 6px 0 15px;
+	font-size: 18px;
+}
+main .educacion .lineaTiempo .cardLinea h3{
+	margin-bottom: 8px;
+	font-size: 18;
+}
+main .educacion .lineaTiempo .cardLinea h4{
+	margin-bottom: 20px;
+	font-size: 14;
+	text-decoration: underline;
+}
+main .educacion .lineaTiempo .cardLinea p{
+	line-height: 2rem;
+	font-family: 'consolas','Open Sans', 'Arial';
+}
+
+main .habilidades{
+	display: block;
+}
+
+/* HABILIDADES */
+main .habilidades .habilidadBox{
+	margin-top: 3em;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));	
+	grid-auto-rows: minmax(75px, auto);
+	gap: 1rem;
+}
+
+main .habilidades .habilidadBox > div{
+	font-family: 'Segoe UI','Open Sans', 'Arial';
+	font-size: 16px;
+	display: flex;
+	justify-content: start;	
+	align-items: center;
+	background-color: #E8EBEC;
+	border-radius: 28px;
+	border: 1px solid #dbdbdb;
+}
+
+main .habilidades .habilidadBox span{
+	font-weight: bold;
+}
+
+main .habilidades .habilidadBox p{
+	color: #747474;
+	font-size: 15px;
+}
+
+main .habilidades .habilidadBox .img img{	
+	margin: 0 20px;
+	height: 3rem;
+	width: 3rem;
+
+}
+main .habilidadBox > div:hover{
+	cursor: pointer;
+	transition: ease-in-out .6s;
+	box-shadow: 0 0 20px rgba(137, 139, 139, 0.7);
+}
+
+
+
+/* PROYECTOS */
+main .proyectos{	
+	display: block;
+}
+main .proyectos .proyectos_card {	
+	margin-top: 3em;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));	
+	grid-auto-rows: minmax(75px, auto);
+	gap: 1rem;
+}
+main .proyectos .proyectos_card > div{
+	font-family: 'Segoe UI','Open Sans', 'Arial';
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	display: flex; 
+	justify-content: center;	
+	align-content: center;
+	background-color: #E8EBEC;
+	border-radius: 10px;
+	border: 1px solid #dbdbdb;		
+}
+main .proyectos .proyectos_card .proyecto_img > img {
+	width: 100%;
+}
+
+main .proyectos .proyectos_card div .proyecto_img{
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+main .proyectos .proyectos_card div .box{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+	gap: 10px;
+	align-items: center;
+	border-radius: 10px;
+	position: absolute;	
+	visibility: hidden;
+	bottom: 0; 
+	top: calc(100% - 5px);
+	background-color: rgba(20, 35, 241, 0.7);
+	z-index: 1;
+	transition: ease-in-out 1s;	
+	
+}
+main .proyectos .proyectos_card .proyecto_img:hover .box {
+	background-color: rgba(20, 35, 241, 0.7);
+	cursor: pointer;
+	top: 0;
+	visibility: visible;
+}
+main .proyectos .proyectos_card div .box a {
+	background-color: #1F2937;
+	padding: 10px;
+	border-radius: 5px;
+}
+main .proyectos .proyectos_card div .box a:hover {
+	transition: ease-in-out 0.4s;	
+	background-color: #3c4b57;
+}
+main .proyectos .proyectos_card div .box .tecnologias{
+	margin-left: 50px;
+	width: 100%;
+}
+main .proyectos .proyectos_card div li{
+	list-style-type: disc;
+}
+
+main .proyectos .proyectos_card h2, h5, li, .github, .repo{	
+	font-size: 1rem;
+	color: white;
+	font-family: 'consolas','Open Sans', 'Arial';
+}
+
+
+
+@media (max-width: 895px){
+	nav .checkbtn{
+		display: block;
+	}
+	ul{
+		z-index: 2;
+		position: absolute;
+        width: 100%;
+        height: 50vh;
+        background: white;        
+        top: 5rem;
+		left: -100%;		
+        text-align: left;
+        transition: ease-in-out .5s;
+	}
+	nav ul{
+		display: block;
+		line-height: 2rem;		
+	}
+	#check:checked ~ ul{
+        left: 0;
+    }
+	main .presentacion .descripcion{
+		
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	main .educacion .lineaT{
+		left: 0;		
+	}
+	main .rowCard .circle{		
+		left: -6px;
+	}
+	main .educacion .lineaTiempo .cardLinea{		
+		align-items: flex-start;
+		width: 100%;
+	}
+	main .presentacion .descripcion, .infoDescripcion{
+		width: 100%;
+	}
+	main .presentacion{
+		margin-bottom: 2rem;
+	}	
+	main .info,	
+	.educacion, 
+	.habilidades,
+	.proyectos{
+		margin-bottom: 2rem;		
+}
+}
+
+@media (max-width: 730px) {
+	main .presentacion .container{
+		width: 90%;
+	}	
+}
+@media (max-width: 660px) {
+	main .redes-sociales{	
+		display: none;
+	}
+	main .presentacion{
+		margin-left: 2rem;		
+	}	
+	main .info,	
+	.educacion, 
+	.habilidades,
+	.proyectos{
+		margin-left: 2rem;	
+		width: 90%;	
+	}
+	main .info .card{
+		display: flex;
+		margin-top: 2rem;
+		flex-direction: column-reverse;	
+	}
+	main .presentacion .container{
+		margin-top: 2.5rem;
+		width: 100%;
+	}
+	
+	main .presentacion .name, .typed{
+		font-size: 1.7rem !important;
+	}
+}
