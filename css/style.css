@@ -136,14 +136,15 @@ main .presentacion .auto{
 	width: 100%;
 	height: 100px;
 }
-main .presentacion .descripcion, .infoDescripcion{
+
+main .presentacion .descripcion, .infoDescripcion{	
 	font-family: 'Segoe UI','Open Sans', 'Arial';
 	line-height: 1.8rem;
 	margin-top: 3em;
 	width: 90%;
 }
 
-main button{
+main .contacto_w{
 	margin-top: 3em;
 	color:#ffffff;
 	font-weight:bold;
@@ -156,7 +157,7 @@ main button{
 	border:2px solid transparent;
 	border-radius:15px;
 }
-main button:hover{
+main .contacto_w:hover{
 	transition: ease-in-out .6s;
 	box-shadow: 0 0 35px rgba(72, 50, 201, 0.8);
 }
@@ -360,6 +361,20 @@ main .proyectos .proyectos_card {
 	grid-auto-rows: minmax(75px, auto);
 	gap: 1rem;
 }
+
+main .proyectos .movil{
+	grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+	margin-top: 0;
+}
+
+main .proyectos .subtitle_proyec{
+	font-family: 'Segoe UI','Open Sans', 'Arial';
+	font-size: 1rem;
+	margin: 2rem;	
+}
+
 main .proyectos .proyectos_card > div{
 	font-family: 'Segoe UI','Open Sans', 'Arial';
 	width: 100%;
@@ -557,5 +572,10 @@ footer .first_line, .last_line{
 	}
 	main .proyectos .proyectos_card {
 		grid-template-columns: repeat(1, 1fr);
-	  }
+	}
+	main .proyectos .movil {
+		grid-template-columns: repeat(2, 1fr);
+    	grid-template-rows: auto;
+    	grid-gap: 1rem;
+	}
 }
